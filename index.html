@@ -1,1 +1,614 @@
-<h1>Hello World</h1>
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backcountry Navigation</title>
+    <link rel="stylesheet" href="base.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="slideshow.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="dark-grey.css" type="text/css" media="screen">
+</head>
+
+<body class="js-notes-active">
+    <div class="slides">
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.001.jpg" srcset="images/images.001-hg.jpg 1200w, images/images.001-lg.jpg 984w, images/images.001-md.jpg 728w, images/images.001-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 1">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>“Navigation” is the overall process of finding your way to your objective. This may be hiking along
+                    a trail, following signposts at intersections. May involve map and compass, or any other number of
+                    techniques.</p>
+
+                <p>“Route finding” is more immediate. It involves reading the terrain, comparing with the map, and
+                    determining the best way to travel safely and efficiently.</p>
+
+                <p>“Orientation” is the process of finding your current position on a map. Often, you don’t care about
+                    exact location, but general location relative to specific terrain features is enough. Am I on the
+                    right ridge? Am I too high, too low, etc.</p>
+
+                <p>“Orienteering” involves locating a specific arbitrary location on a map, then reaching that
+                    location. This has become a sport on its own, but may be useful in general to reach a water source,
+                    cache, return to your car, etc.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.002.jpg" srcset="images/images.002-hg.jpg 1200w, images/images.002-lg.jpg 984w, images/images.002-md.jpg 728w, images/images.002-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 2">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>Everyone needs a map, paper and/or electronic. Everybody has a smartphone, with built-in GPS, so you
+                    should have one or more mapping GPS apps available.</p>
+
+                <p>Primary planning tool I use is <a href="http://caltopo.com" target="_blank">caltopo.com</a>. In
+                    addition a wide variety of built-in map layers, it has a full set of drawing tools for plotting
+                    potential routes, estimating elevation profiles, etc.</p>
+
+                <p>It tends to underreport travel distance, at least compared to the average distance my participants
+                    report when tracking our actual route. I’ll often add 10-15% to the distance reported by CalTopo,
+                    and still end up a bit short. Actual distance doesn’t matter too much, as long as you can estimate
+                    time needed for the route. This sort of estimate just takes practice.</p>
+
+                <p>You can save customized maps, and view public data from other users of the site.</p>
+
+                <p>Plotted data can be downloaded in the common .GPX format, or you can print the map to a geotagged
+                    PDF format, which can be imported and used by mapping apps on iPhone or Android devices. In the
+                    field, geotagged PDF is a live map, and your position and track will be shown overlaid on top.</p>
+
+                <p>Other sources for GPS tracks include <a href="http://summitpost.org" target="_blank">summitpost.org</a>
+                    and <a href="http://peakbagger.com" target="_blank">peakbagger.com</a>; the latter of which has its
+                    own app that can show maps and previous climber’s tracks directly.</p>
+
+                <p>Sites like summitpost, nwhikers, or cascadeclimbers are great resources for route descriptions,
+                    though the quality can vary. </p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.003.jpg" srcset="images/images.003-hg.jpg 1200w, images/images.003-lg.jpg 984w, images/images.003-md.jpg 728w, images/images.003-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 3">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>Surveyors build topo maps by connecting points of equal elevation. These are projected into a
+                    top-down 2D view to become contour lines.</p>
+
+                <p>In general, the steeper terrain shows up as closely-spaced contour lines. Gentler slopes show up as
+                    wider-spaced lines.</p>
+
+                <p>Contour lines will not show terrain features smaller than the interval. In this example with lines
+                    10 meters apart, between each pair of lines could be anything from a gentle slope to a 19 meter
+                    cliff.</p>
+
+                <p>Contour lines also tell you nothing about the composition of the terrain, just changes in elevation.
+                    The mountaineer needs to be prepared to encounter thick brush, boulder fields, ice, or other
+                    hazards.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.004.jpg" srcset="images/images.004-hg.jpg 1200w, images/images.004-lg.jpg 984w, images/images.004-md.jpg 728w, images/images.004-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 4">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>US Geological Survey is the source of most of the terrain data available in the United States.</p>
+
+                <p>A full quad covers 1/8 degree of latitude and longitude.</p>
+
+                <p>Typical scale is 1:24000, or 1 map inch = 24000 inches. Roughly 2.5 inches on the map to a mile on
+                    the trail.</p>
+
+                <p>Bold, labeled contour intervals are 200 feet apart.</p>
+
+                <p>Minor contour intervals in between are 40 feet apart.</p>
+
+                <p>USGS maps include some terrain labels and features (peaks, creeks, trails, etc.)</p>
+
+                <p>Identify ridge vs valley based on direction the V-shaped contours point. If V points towards the
+                    peak, it’s a valley; if V points away, it’s ridge.</p>
+
+                <p>If there’s a stream running through the V, it’s confirmation it’s a valley.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.005.jpg" srcset="images/images.005-hg.jpg 1200w, images/images.005-lg.jpg 984w, images/images.005-md.jpg 728w, images/images.005-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 5">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>USFS coverage is only within the National Forest boundaries. Some local hikes on state land (Mt Si,
+                    Tiger, etc.) will not be included.</p>
+
+                <p>There are periodic updates to the USFS map style. The sample image is from the 2016 release. The
+                    earlier 2013 release doesn’t include the green vegetation areas, so has a stronger focus on the
+                    contour lines. This makes it a great style for printing in black and white.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.006.jpg" srcset="images/images.006-hg.jpg 1200w, images/images.006-lg.jpg 984w, images/images.006-md.jpg 728w, images/images.006-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 6">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>MapBuilder is a compilation of USGS terrain and OpenStreetMap user data. Trails and other
+                    information generated through GPS tracks, or direct input through the OpenStreetMap editing tools.</p>
+
+                <p>Shadows added to highlight elevation changes, makes it easy to identify mountains, ridges, etc.</p>
+
+                <p>Bright red lines for trails shows focus on outdoor recreation.</p>
+
+                <p>Labels and other features are generated automatically, so map image quality may not be as good as
+                    USGS or USFS sources. Maps can get cluttered, labels clipped, etc.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.007.jpg" srcset="images/images.007-hg.jpg 1200w, images/images.007-lg.jpg 984w, images/images.007-md.jpg 728w, images/images.007-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 7">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>A handrail is a feature that’s easy to identify, easy to follow, and makes it obvious when you’re
+                    on- or off-route. Ridges, streams, roads and trails, etc. Common usage is something like, “We’ll
+                    stay just to the left of this ridge for the next few hundred yards”</p>
+
+                <p>An attack point is a prominent land feature that’s expected to remain visible for some section of
+                    the route. Everyone in the group can see it, identify it, and head for it without hesitation. e.g.,
+                    “Head for that big tree on the other side of the boulder field and regroup there”. Typically,
+                    routes are broken up into a series of attack points. Head for one, identify the next, repeat.</p>
+
+                <p>A collecting feature is something on or near the route that’s easy to identify when the group draws
+                    near. Trail junctions, view points, stream crossings, etc. “Continue up the trail until you break
+                    out of the trees.”</p>
+
+                <p>A decision point is simply a collecting feature that prompts a new action from the group. “Turn left
+                    at the next trail intersection.”, or “Once we reach the lake, we switch from trail to cross-country
+                    travel.”</p>
+
+                <p>A catching feature is something that tells you you’ve overshot your goal or are otherwise off route.
+                    “A boot path should be coming up on the left. If we cross another stream, we’ve missed it.”</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.008.jpg" srcset="images/images.008-hg.jpg 1200w, images/images.008-lg.jpg 984w, images/images.008-md.jpg 728w, images/images.008-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 8">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>The SE approach to Cashmere Mountain illustrates many of the terrain-based navigation concepts.</p>
+
+                <p>After an initial short hike along a trail to an intersection with an abandoned road (decision
+                    point), climb steeply up a loose dirt slope some 1500 feet until it levels and meets a boulder
+                    field.</p>
+
+                <p>The boulder field continues for nearly a mile and a half. There’s no one right way to traverse, just
+                    cross using a series of attack points to periodically regroup, and let individuals find their own
+                    routes based on comfort level.</p>
+
+                <p>Cliffs above the boulder field serve as handrail, preventing the group from climbing too high too
+                    soon.</p>
+
+                <p>Cashmere Dagger serves as an obvious catching feature marking transition between boulders and summit
+                    scramble. As long as you don’t ascend a gully before reaching it, it’s impossible to miss before
+                    arriving at the correct location.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.009.jpg" srcset="images/images.009-hg.jpg 1200w, images/images.009-lg.jpg 984w, images/images.009-md.jpg 728w, images/images.009-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 9">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>Distance covered and time traveled can vary greatly based on terrain and group composition. On
+                    trail, average pace can be 2mph or more; off-trail scrambles, deep snow, etc. will slow that
+                    dramatically. You still may be able to get a sense if you’re off-track if you haven’t reached a
+                    known feature by a certain time.</p>
+
+                <p>If you’re trying to reach a specific destination, aim for a catching feature or handrail, and let
+                    that guide to you it, rather than heading directly and risking the chance of missing it completely.
+                    e.g., if you’re traveling cross-country to reach your car parked at a bend in the road, aim for the
+                    road well before the bend.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.010.jpg" srcset="images/images.010-hg.jpg 1200w, images/images.010-lg.jpg 984w, images/images.010-md.jpg 728w, images/images.010-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 10">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>Original plan for this portion of the trip was to visit Hard Cheese, Hard Knox, and maybe continue
+                    on to Thorp Mountain.</p>
+
+                <p>Hiking through the fresh snow up the switchbacks from the south, somewhere along the long switchback
+                    to the west, instruction to fastest group members was to stop after the trail bends right, and then
+                    switches back left again. Decision point here - regroup and see if direct ascent up the ridge was
+                    possible. It was. Followed the ridge (handrail) to the summit.</p>
+
+                <p>On north side of Cheese, continue on the ridge until we cross trail (collecting feature) on the
+                    flats. Continue on ridge following trail towards Hard Knox.</p>
+
+                <p>Per the map, the trail continues north to Thorp, but over steep slope, and seems to disappear under
+                    slippery packed snow. Trail here really not apparent as it disappears over the steep crest of the
+                    ridge, so we continue directly up the ridge to the summit of Hard Knox.</p>
+
+                <p>As bonus, we follow the contours of the bowl to the west, to visit Not Knox, then down the most
+                    mellow-looking slopes to the south/southeast into the valley.</p>
+
+                <p>On the return trip down through valley between Knox and Cheese. Traversed south, as level as
+                    possible along the slopes of Hard Cheese, to pick up the road spur and make sure we don’t miss the
+                    corner and wind up too far down the hill. Bearing off. </p>
+
+                <p>Lesson: Marked trails may not be easiest route, when seasonal conditions affect difficulty.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.011.jpg" srcset="images/images.011-hg.jpg 1200w, images/images.011-lg.jpg 984w, images/images.011-md.jpg 728w, images/images.011-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 11">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>What actually happened, as vegetation gradually forced us downslope closer to the creek, is we ran
+                    into a road not indicated on any map I can find.</p>
+
+                <p>This is a rare case of a map being inaccurate, but in our favor!</p>
+
+                <p>Lesson: Regardless, use of Hard Cheese as handrail, to follow until intersecting known road shown on
+                    map, was good practice and ensured we’d reach a known location on the map</p>
+
+                <p>Lesson: Marked trails may not be easiest route, when seasonal conditions affect difficulty.</p>
+
+                <p>Lesson: Maps may not be 100% accurate.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.012.jpg" srcset="images/images.012-hg.jpg 1200w, images/images.012-lg.jpg 984w, images/images.012-md.jpg 728w, images/images.012-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 12">
+            </div>
+            <div class="slide-notes" style="display: block;">
+
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.013.jpg" srcset="images/images.013-hg.jpg 1200w, images/images.013-lg.jpg 984w, images/images.013-md.jpg 728w, images/images.013-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 13">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>The needle freely rotates to align with the Earth’s magnetic field.</p>
+
+                <p>Needle “box” surrounds the needle. Often has parallel lines and arrow indicating true north. Can be
+                    rotated independent of capsule to adjust for magnetic declination.</p>
+
+                <p>The capsule shows the four cardinal directions, and degrees. Can be rotated when direction of travel
+                    is other than north.</p>
+
+                <p>Straight edge, ruler, and other tools to measure and align the compass against the map.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.014.jpg" srcset="images/images.014-hg.jpg 1200w, images/images.014-lg.jpg 984w, images/images.014-md.jpg 728w, images/images.014-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 14">
+            </div>
+            <div class="slide-notes" style="display: block;">
+
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.015.jpg" srcset="images/images.015-hg.jpg 1200w, images/images.015-lg.jpg 984w, images/images.015-md.jpg 728w, images/images.015-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 15">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>Sometimes you only need to know general direction of travel, North- South-ish, Northwest, etc.</p>
+
+                <p>Quick glance at a button compass, estimate based on position of the sun, or judge against known
+                    feature. e.g., for a hike around Snoqualmie Pass, Mt Rainier is a little bit west of south</p>
+
+                <p>If you know your position, and can see a prominent feature that you can identify on the map, you can
+                    use that as a reference point to judge bearings to other features</p>
+
+                <p>Measure your hands, and use an online angular size calculator to calibrate yourself</p>
+
+                <p>With practice, you can estimate within a few degrees of accuracy</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.016.jpg" srcset="images/images.016-hg.jpg 1200w, images/images.016-lg.jpg 984w, images/images.016-md.jpg 728w, images/images.016-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 16">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>You can generally rely on a topographic map to be accurate in terms of land features, though small
+                    features may not be represented. Small feature in map terms may be a 60+ foot cliff, which can be a
+                    serious obstacle on a human scale.</p>
+
+                <p>Depending on the map source, trail information may be accurate, or just a representation of the
+                    route. USGS/USFS and guidebook maps tend to use artistic representations of trails, so the actual
+                    locations may be many dozens of feet off.</p>
+
+                <p>MapBuilder trail information tends to be more recent, and generated from actual GPS tracks, so can
+                    be more accurate.</p>
+
+                <p>Downloaded GPS tracks can be generated in several ways. They can be from actual in-the-field track
+                    logs, hand-edited, or simple plotted estimates. These methods affect accuracy.</p>
+
+                <p>Seasonal changes affect the accuracy and suitability of route information. A GPS track logged by a
+                    skier in the dead of winter will likely not be very helpful to a hiker in the dry summer months.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.017.jpg" srcset="images/images.017-hg.jpg 1200w, images/images.017-lg.jpg 984w, images/images.017-md.jpg 728w, images/images.017-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 17">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>The easy route this time turned out to be a gully choked with brush and fallen trees in summer.
+                    Second easiest route starts out mellow, then turns into 40’ class 4 down climb.</p>
+
+                <p>The cliffs here are small enough to not be represented on the map</p>
+
+                <p>Lesson: Season can greatly affect the difficulty and description of the route.</p>
+
+                <p>Lesson: When venturing into unknown terrain, be prepared to backtrack if necessary. Don’t climb up
+                    anything you can’t climb down.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.018.jpg" srcset="images/images.018-hg.jpg 1200w, images/images.018-lg.jpg 984w, images/images.018-md.jpg 728w, images/images.018-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 18">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>Ultimately, there’s always some level of uncertainty that you need to deal with out in the field.
+                    Use maps and plotted routes as a guide, not necessarily a strict course to follow.</p>
+
+                <p>Use periodic checks against your plotted route. Is the group on course, too high, too low? Don’t
+                    worry about following the track exactly.</p>
+
+                <p>When faced with a bushwhack or scramble, there’s usually a way that’s more obvious or easy than
+                    others. It may be where vegetation is the thinnest, where rock steps are most prominent, whatever.
+                    Navigating through unknown terrain is often broken down into a series of these mini-obstacles. In
+                    some situations it may involve trial-and-error, as a likely path through thick brush may dead-end.</p>
+
+                <p>As you navigate a series of obstacles in this manner, look up from time to time. Check your
+                    handrails or attack points to verify you’re still on course. Very common to wander when scrambling
+                    off trail, through a boulder field, etc.</p>
+
+                <p>Where appropriate within a group, take turns leading to help others develop navigation skill. Trip
+                    leader should lay out objectives and give general instructions (macro navigation), but let others
+                    figure out and guide group through specific obstacles.</p>
+
+                <p>As a group participant, don’t just follow along. Practice paying attention to your surroundings.
+                    Look back often, especially at intersections or other decision points. If something happened to the
+                    group, would you be able to find your way out?</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.019.jpg" srcset="images/images.019-hg.jpg 1200w, images/images.019-lg.jpg 984w, images/images.019-md.jpg 728w, images/images.019-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 19">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>This trail map was generated via live GPS tracks - the map maker physically traveled on each of
+                    these trails, so it is (or at least was) an accurate representation of the region.</p>
+
+                <p>But things change…</p>
+
+                <p>At the north central part of the map, the lingering loop was blocked, and replaced by a meandering
+                    trail that enters the forest, nearly returns to the power line trail, then heads south yet again.
+                    Seemingly for no reason than to tack on an extra half mile.</p>
+
+                <p>The main Tiger Mountain Trail was partially rerouted below West Tiger 2 to avoid a landslide several
+                    years ago.</p>
+
+                <p>We were surprised this past weekend that another section of the TmT was rerouted to avoid a wet,
+                    overgrown valley - brand new intersection and portion of trail that didn’t exist a year ago.</p>
+
+                <p>Some of the trails between South, Middle, and East Tiger Mountains have been blocked by active
+                    logging.</p>
+
+                <p>Several new mountain biking trails have been built in the southeast portion of the forest, near East
+                    Tiger.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.020.jpg" srcset="images/images.020-hg.jpg 1200w, images/images.020-lg.jpg 984w, images/images.020-md.jpg 728w, images/images.020-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 20">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>The official Red Mountain trail from the Cooper Lake road is quite primitive and overgrown in spots.
+                    It climbs up the east side, up to the saddle south of the northern peak, then down the other side
+                    to Little Joe Lake.</p>
+
+                <p>On the route up, trail kept disappearing, requiring searching to pick it up again. In the photo
+                    here, we’re on trail or close to it, but trail vanishes just before the rocks start. Some searching
+                    required to spot the trail continuing up to the left. Similar problem in a frosty meadow a bit
+                    before.</p>
+
+                <p>There’s also a side trail more obviously flagged than the main trail, but dead ends at a mining
+                    prospect to lead hikers astray.</p>
+
+                <p>On the way back from south peak, rather than climb back up and over middle peak, we decided to
+                    bushwhack along flat, to rejoin the trail as it switchbacked down to the west side to the lake.
+                    According to the map and our GPS location, we’d traveled well past the trail and should have been
+                    between switchbacks. We estimated the rough bearing up to the saddle and headed in that direction,
+                    and found the actual trail was several hundred feet farther on. </p>
+
+                <p>Lesson: Can’t trust maps 100%</p>
+
+                <p>Lesson: When the group loses the trail, stop and search methodically</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.021.jpg" srcset="images/images.021-hg.jpg 1200w, images/images.021-lg.jpg 984w, images/images.021-md.jpg 728w, images/images.021-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 21">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>By using navigational techniques, it’s unlikely to become truly lost. Between terrain features, GPS,
+                    and map and compass, you should at least have a general idea of the group’s location, if not the
+                    specific position.</p>
+
+                <p>If you find yourself in a situation where it’s not apparent which direction to travel, stop and
+                    reassess. </p>
+
+                <p>On a similar note, if you find a trail, take a moment to think about which direction you should go
+                    instead of just forging ahead. Use position of sun and/or compass direction and ask yourself if the
+                    direction the trail is heading makes sense.</p>
+
+                <p>One of the first times I hiked Tiger Mountain, I was without a map, but felt confident since each
+                    intersection was well-signed. I parked at the main lot for West Tiger 3, hiked the main trail, and
+                    continued on to West Tiger 2. I explored the summit and came down the trail on the north side. At a
+                    T intersection, a sign presented me with two choices “Tradition Lake” and “Issaquah Hobart Road”.
+                    Not knowing the first option was the actual name of the TH where I parked, I said to myself, “I
+                    don’t want either of those.” However, I was pretty sure Issaquah Hobart Road was way off in the
+                    wrong direction so chose the other path.</p>
+
+                <p>It’s much more likely that the group will become separated, hopefully only intentionally, and
+                    hopefully only for a short duration. If it’s critical for a specific group and/or event, there may
+                    be a strict “the group sticks together” policy. Though that can quickly lead to frustration among
+                    group members.</p>
+
+                <p>Much better to have an explicit plan to regroup, and stick to it. This is a very hard lesson to
+                    learn.</p>
+
+                <p>For instance, on Hard Knox, for the return trip on road, folks out in front of group missed turn
+                    onto return trail - person with the map was navigating from middle of group.</p>
+
+                <p>Lesson: If you’re out in front of the group, make sure you know the route.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.022.jpg" srcset="images/images.022-hg.jpg 1200w, images/images.022-lg.jpg 984w, images/images.022-md.jpg 728w, images/images.022-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 22">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>Group decided to leave the trail and bushwhack, short-cutting a very long series of switchbacks.</p>
+
+                <p>At one point, group headed right, while one remained behind (gear adjustment, bio break). </p>
+
+                <p>Rather than follow group, individual decided to head up more directly, expecting group to curve back
+                    left and meet up further on.</p>
+
+                <p>Group continued right. Individual could hear group shouting in the distance, but single voice was
+                    unable to be heard by the group.</p>
+
+                <p>Individual stayed left, continued up until hitting the trail again.</p>
+
+                <p>Lesson: If you don’t have explicit plan for regrouping, don’t split up the group.</p>
+
+                <p>Lesson: Non-emergency communication is impossible without planning ahead.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: none;">
+            <div class="slide-image">
+                <img src="image/image.023.jpg" srcset="images/images.023-hg.jpg 1200w, images/images.023-lg.jpg 984w, images/images.023-md.jpg 728w, images/images.023-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 23">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p>On the summit, after a long break, the group split up as some wanted to get moving again.</p>
+
+                <p>First few to head down said they’d hike slow and allow the rest of group to catch up.</p>
+
+                <p>The group leader agreed, but didn’t provide explicit instructions where/when to stop and wait. Just
+                    assumed the natural thing to do would be to stop when the boot path ended at the main trail to the
+                    falls.</p>
+
+                <p>The group leader ended up helping slowest hikers at tail of the group down, since they were
+                    uncomfortable with slippery winter conditions.</p>
+
+                <p>Lead group didn’t wait, continued down the main trail, completely ignoring the obscure side trail we
+                    had used on the way in. Lead group continued down main trail all the way to the incorrect
+                    trailhead.</p>
+
+                <p>Lesson: Don’t rely on common sense in favor of explicit plan</p>
+
+                <p>Lesson: No matter the pace, if the lead group doesn’t wait to regroup, it’s very difficult to catch
+                    up.</p>
+            </div>
+        </div>
+
+        <div class="slide" style="display: flex;">
+            <div class="slide-image">
+                <img src="image/image.024.jpg" srcset="images/images.024-hg.jpg 1200w, images/images.024-lg.jpg 984w, images/images.024-md.jpg 728w, images/images.024-sm.jpg 375w"
+                    sizes="100vw" alt="Image of slide number 24">
+            </div>
+            <div class="slide-notes" style="display: block;">
+                <p><a href="https://caltopo.com/map.html">caltopo.com</a></p>
+
+                <p><a href="https://www.avenza.com/avenza-maps/">avenza.com</a></p>
+
+                <p><a href="https://www.summitpost.org/">summitpost.org</a></p>
+
+                <p><a href="https://www.wta.org/go-hiking/trip-reports">wta.org</a></p>
+
+                <p><a href="http://peakbagger.com/">peakbagger.org</a></p>
+
+                <p><a href="http://www.nwhikers.net/forums/">nwhikers.net</a></p>
+
+                <p><a href="https://cascadeclimbers.com/">cascadeclimbers.com</a></p>
+
+                <p><a href="http://www.bushwalking101.org/interpreting-map-features/">bushwalking101.org</a></p>
+
+                <p><a href="https://www.mountaineers.org/courses">mountaineers.org</a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="bottom-row">
+        <div id="slide-pos">
+            <span id="slide-pos-current">24</span><span>/</span><span id="slides-total">24</span>
+        </div>
+
+        <div id="explicit-controls">
+            <button id="btn-prev-slide">←</button>
+            <button id="btn-next-slide">→</button>
+        </div>
+        <a href="#" id="show-shortcuts">Shortcuts</a>
+    </div>
+
+    <div id="shortcuts" style="display: none;">
+        <p>Shortcuts:</p>
+        <ul>
+            <li>Left arrow: previous slide</li>
+            <li>Right arrow: next slide</li>
+            <li>N: Show notes</li>
+        </ul>
+    </div>
+
+    <script src="slideshow.js" type="text/javascript"></script>
+
+
+
+</body>
+
+</html>
